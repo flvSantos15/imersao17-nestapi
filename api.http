@@ -10,3 +10,24 @@ Content-Type: application/json
   "image_url": "https://via.placeholder.com/150",
   "price": 100
 }
+
+###
+GET http://localhost:3333/orders
+
+###
+POST http://localhost:3333/orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "product_id": "7f8c9d8e-9f0a-1b2c-3d4e-5f6g7h8i9j0k",
+      "quantity": 1
+    },
+    {
+      "product_id": "668c9d12-9f0a-1b2c-3d4e-5f6g7h8i19d7",
+      "quantity": 1
+    }
+  ],
+  "card_hash": "123"
+}

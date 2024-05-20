@@ -3,6 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { OrdersModule } from './orders/orders.module';
+import { Order } from './orders/entities/order.entity';
+import { OrderItem } from './orders/entities/order-item.entity';
 import { Product } from './products/entities/product.entity';
 
 @Module({
@@ -14,11 +17,12 @@ import { Product } from './products/entities/product.entity';
       username: 'root',
       password: 'root',
       database: 'nest',
-      entities: [Product],
+      entities: [Product, Order, OrderItem],
       synchronize: true,
       logging: true
     }),
-    ProductsModule
+    ProductsModule,
+    OrdersModule
   ],
   controllers: [AppController],
   providers: [AppService]
