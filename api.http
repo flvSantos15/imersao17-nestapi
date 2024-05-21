@@ -12,11 +12,22 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3333/auth/login
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "john"
+}
+
+###
 GET http://localhost:3333/orders
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjMwOTA2MiwiZXhwIjoxNzE2MzA5MTIyfQ.B7-LbTUlAtWbUfNaDPjaOgRsmXHl_FKG2G5HDE_f_pU
 
 ###
 POST http://localhost:3333/orders
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjMxMDIwNCwiZXhwIjoxNzE2MzEwMjY0fQ.cT4TwwP68Wm2N5yfSsKP6Hy3gVmLNSRdoZjkk2B-RK4
 
 {
   "items": [
@@ -31,3 +42,5 @@ Content-Type: application/json
   ],
   "card_hash": "123"
 }
+
+# Parei no 1:42:41
