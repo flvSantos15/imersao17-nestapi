@@ -5,10 +5,10 @@ POST http://localhost:3333/products
 Content-Type: application/json
 
 {
-  "name": "Keyboard",
-  "description": "Mecanic Keyboard",
+  "name": "Mouse",
+  "description": "Wireless Mouse",
   "image_url": "https://via.placeholder.com/150",
-  "price": 100
+  "price": 50
 }
 
 ###
@@ -22,21 +22,21 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3333/orders
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjMwOTA2MiwiZXhwIjoxNzE2MzA5MTIyfQ.B7-LbTUlAtWbUfNaDPjaOgRsmXHl_FKG2G5HDE_f_pU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjQyODI0NywiZXhwIjoxNzE2NDI4MzA3fQ.M_zEcT1ypfuLHko63fkCorGFjwO9GOGwT80wga2Z5Vo
 
 ###
 POST http://localhost:3333/orders
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjMxMDIwNCwiZXhwIjoxNzE2MzEwMjY0fQ.cT4TwwP68Wm2N5yfSsKP6Hy3gVmLNSRdoZjkk2B-RK4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcxNjQyOTA1NywiZXhwIjoxNzE2NDI5MTE3fQ.yGeHxEOMMGCX975z1YBk6JdWskw8KPaY7qZka8rYXNQ
 
 {
   "items": [
     {
-      "product_id": "7f8c9d8e-9f0a-1b2c-3d4e-5f6g7h8i9j0k",
+      "product_id": "132f7986-dad1-4e83-b826-181dfd2fd800",
       "quantity": 1
     },
     {
-      "product_id": "668c9d12-9f0a-1b2c-3d4e-5f6g7h8i19d7",
+      "product_id": "cd6cc186-2731-4634-aa36-82a4cc2ea33d",
       "quantity": 1
     }
   ],
