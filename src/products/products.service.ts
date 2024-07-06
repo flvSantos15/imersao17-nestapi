@@ -5,8 +5,6 @@ import { Repository } from 'typeorm';
 import { Product } from './entities/product.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 
-// Parei no 55:24
-
 @Injectable()
 export class ProductsService {
   constructor(

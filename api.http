@@ -1,3 +1,9 @@
+###
+GET http://localhost:3333/category HTTP/1.1
+Host: localhost:3333
+Content-Type: application/json
+
+###
 GET http://localhost:3333/products
 
 ####
@@ -5,10 +11,11 @@ POST http://localhost:3333/products
 Content-Type: application/json
 
 {
-  "name": "Mouse",
-  "description": "Wireless Mouse",
-  "image_url": "https://via.placeholder.com/150",
-  "price": 50
+  "id": "6d652b3a-1e74-4b03-a29c-14095e57029b",
+  "name": "Product 21",
+  "description": "Description 21",
+  "price": 2100,
+  "image_url": "http://localhost:9000/products/5.png"
 }
 
 ###
@@ -42,5 +49,3 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuY
   ],
   "card_hash": "123"
 }
-
-# Parei no 1:42:41
